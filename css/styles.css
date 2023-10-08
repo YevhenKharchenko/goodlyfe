@@ -34,6 +34,15 @@ img {
   max-width: 100%;
 }
 
+.container {
+  width: 100%;
+  max-width: 320px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* .container {
   width: 100%;
   max-width: 1393px;
@@ -47,6 +56,8 @@ img {
 
 .header {
   background-color: #e43071;
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 
 .header-nav {
@@ -55,20 +66,22 @@ img {
 .header-nav-link {
   color: #fff;
   text-align: center;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 800;
   line-height: 1.1;
 }
 
 .header-span {
   color: #ffc1d8;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 800;
   line-height: 1.1;
 }
 
 .header-list {
+  display: none;
 }
+
 .header-item {
 }
 
@@ -78,6 +91,11 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.1;
+}
+
+.header-menu-btn {
+  margin-left: auto;
+  display: block;
 }
 
 .header-btn {
@@ -90,6 +108,7 @@ img {
   font-weight: 400;
   line-height: 1.1;
   border: none;
+  display: none;
 }
 
 /* ========================== */
@@ -97,14 +116,17 @@ img {
 /* ==========HERO========== */
 
 .hero {
+  padding-top: 103px;
+  padding-bottom: 28px;
 }
 
 .hero-main-title {
   color: #fff;
   text-align: center;
-  font-size: 70px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.1;
+  margin-bottom: 23px;
 }
 
 .hero-span {
@@ -112,6 +134,7 @@ img {
   font-size: 70px;
   font-weight: 700;
   line-height: 1.1;
+  display: none;
 }
 
 .hero-btn {
@@ -124,6 +147,10 @@ img {
   font-weight: 600;
   line-height: 2.31;
   border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 42px;
 }
 
 /* ======================== */
@@ -131,7 +158,14 @@ img {
 /* ==========FAQ========== */
 
 .faq {
+  padding-top: 35px;
+  padding-bottom: 23px;
 }
+
+.faq-img-wrapper {
+  margin-bottom: 14px;
+}
+
 .faq-img-weights {
 }
 .faq-img-situps {
@@ -142,22 +176,31 @@ img {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 11px;
+  width: 261px;
 }
 
 .faq-text {
   color: var(--Grey-Copy, #424242);
   line-height: 2.31;
+  width: 269px;
+  margin-bottom: 48px;
 }
 
 .faq-btn {
   border-radius: 38.5px;
   border: 2px solid var(--Premium-Pink, #e43071);
+  background-color: transparent;
   color: #e43071;
   text-align: center;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 2.31;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 80px;
 }
 
 /* ======================= */
@@ -165,14 +208,19 @@ img {
 /* ==========ACTIVE========== */
 
 .active {
+  padding-top: 75px;
+  padding-bottom: 82px;
 }
+
 .active-title {
   color: #fff;
   text-align: center;
   text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46);
-  font-size: 60px;
+  font-size: 42px;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 10px;
+  width: 252px;
 }
 
 .active-text {
@@ -183,6 +231,8 @@ img {
   font-size: 17px;
   font-weight: 600;
   line-height: normal;
+  width: 257px;
+  margin-bottom: 20px;
 }
 
 .active-btn {
@@ -195,6 +245,10 @@ img {
   font-weight: 600;
   line-height: 2.31;
   border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 100px;
 }
 
 /* ========================== */
@@ -202,6 +256,12 @@ img {
 /* ==========FACILITIES========== */
 
 .facilities {
+  padding-top: 74px;
+  padding-bottom: 39px;
+}
+
+.facilities-img-wrapper {
+  margin-bottom: 16px;
 }
 
 .facilities-title {
@@ -209,11 +269,15 @@ img {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
+  width: 259px;
+  margin-bottom: 13px;
 }
 
 .facilities-text {
   color: #424242;
   line-height: 2.31;
+  width: 269px;
+  margin-bottom: 40px;
 }
 
 .facilities-btn {
@@ -226,7 +290,10 @@ img {
   font-size: 16px;
   font-weight: 600;
   line-height: 2.31;
-  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 95px;
 }
 
 .facilities-img-gym {
@@ -239,43 +306,68 @@ img {
 /* ==========STORIES========== */
 
 .stories {
-  background-color: linear-gradient(
-    180deg,
-    #fff 0%,
-    rgba(255, 255, 255, 0) 100%,
-    #f4e3e9
-  );
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%),
+    #f4e3e9;
+  padding-top: 48px;
+  padding-bottom: 38px;
 }
 
 .stories-title {
   color: var(--Grey-Two, #424242);
-  font-size: 48px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.19;
+  width: 225px;
+  margin-bottom: 8px;
 }
 
 .stories-text {
   color: var(--Grey-Two, #424242);
-  font-size: 18px;
+  font-size: 10px;
   line-height: normal;
+  margin-bottom: 25px;
 }
 
 .stories-list {
 }
+
 .stories-item {
+  border-radius: 6.966px;
+  background-color: #fff;
+  box-shadow: 0.69663px 2.78652px 5.57303px 0px rgba(0, 0, 0, 0.18);
+  padding: 24px 22px 26px 44px;
+  width: 243px;
+}
+
+.robert {
+  display: none;
 }
 
 .stories-item-title {
   color: #e43071;
-  font-size: 38px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.19;
+  margin-bottom: 20px;
 }
 
 .stories-item-text {
   color: #424242;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.78;
+  margin-bottom: 15px;
+  width: 176px;
+}
+
+.stories-item-img-wrapper {
+  display: flex;
+  gap: 14px;
+}
+
+.stories-item-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .stories-item-img {
@@ -283,14 +375,14 @@ img {
 
 .stories-item-subtitle {
   color: #424242;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.89;
 }
 
 .stories-item-subtext {
   color: #969bab;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 2.43;
 }
 
@@ -300,6 +392,8 @@ img {
 
 .app {
   background-color: #e43071;
+  padding-top: 50px;
+  padding-bottom: 98px;
 }
 
 .app-title {
@@ -307,21 +401,34 @@ img {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 10px;
 }
 
 .app-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   line-height: normal;
+  margin-bottom: 32px;
 }
 
 .app-download-text {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
 }
+
 .app-list {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 39px;
 }
+
 .app-item {
 }
 .app-item-link {
 }
+
+.app-img-wrapper {
+}
+
 .app-item-img {
 }
 .app-img-first {
@@ -335,6 +442,8 @@ img {
 
 .social {
   background-color: var(--Background-Grey, #ededed);
+  padding-top: 44px;
+  padding-bottom: 66px;
 }
 
 .social-title {
@@ -343,13 +452,26 @@ img {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 15px;
 }
 
 .social-list {
+  display: flex;
+  justify-content: space-between;
 }
 .social-item {
+  width: 75px;
+  height: 75px;
 }
+
 .social-item-link {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ========================== */
@@ -358,14 +480,17 @@ img {
 
 .footer {
   background-color: var(--default-black, #0b0d17);
+  padding-top: 40px;
 }
 
 .footer-logo-link {
   color: #fff;
-  text-align: center;
+  text-align: left;
   font-size: 25.668px;
   font-weight: 800;
   line-height: 1.1;
+  margin-bottom: 24px;
+  display: block;
 }
 
 .footer-span {
@@ -381,14 +506,23 @@ img {
   font-family: Manrope;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 24px;
+  width: 255px;
 }
 
 .footer-soc-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 42px;
 }
+
 .footer-soc-item {
 }
+
 .footer-nav {
+  margin-bottom: 308px;
 }
+
 .footer-nav-list {
 }
 .footer-nav-item {
@@ -401,11 +535,13 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 .footer-nav-sublist {
 }
-.footer-nav-subitem {
+.footer-nav-subitem:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .footer-nav-sublink {
@@ -417,6 +553,10 @@ img {
   line-height: 1.71;
 }
 
+.guides {
+  display: none;
+}
+
 .footer-address-text {
   color: var(--default-white, #fff);
   font-feature-settings: "liga" off;
@@ -424,13 +564,23 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 .footer-address {
+  margin-bottom: 35px;
 }
+
 .footer-address-list {
 }
+
 .footer-address-item {
+  padding-left: 30px;
+  font-style: normal;
+}
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .footer-address-link {
@@ -449,10 +599,17 @@ img {
   font-family: Manrope;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
 }
 
 .footer-bottom-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
 }
+
 .footer-bottom-item {
 }
 

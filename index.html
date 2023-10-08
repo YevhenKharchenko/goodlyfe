@@ -10,314 +10,351 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Open+Sans:wght@600&family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <a class="header-nav-link" href="./index.html"
-          >Good<span class="header-span">lyfe</span></a
-        >
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="header-item-link" href="">Classess</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item-link" href="">Timetable</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item-link" href="">Clubs</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item-link" href="">Nutrition</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item-link" href="">Free Trial</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item-link" href="">Search</a>
-          </li>
-        </ul>
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header-nav-link" href="./index.html"
+            >Good<span class="header-span">lyfe</span></a
+          >
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-item-link" href="">Classess</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Timetable</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Clubs</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Nutrition</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Free Trial</a>
+            </li>
+            <li class="header-item">
+              <a class="header-item-link" href="">Search</a>
+            </li>
+          </ul>
+          <button class="header-menu-btn" type="button"></button>
+        </nav>
         <button class="header-btn" type="button">Login</button>
-      </nav>
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <h1 class="hero-main-title">
-          Welcome to Good<span class="hero-span">lyfe</span> Gyms
-        </h1>
-        <button class="hero-btn" type="button">See the benefits</button>
+        <div class="container">
+          <h1 class="hero-main-title">
+            Welcome to Good<span class="hero-span">lyfe</span> Gyms
+          </h1>
+          <button class="hero-btn" type="button">See the benefits</button>
+        </div>
       </section>
 
       <section class="faq">
-        <img
-          class="faq-img-weights"
-          src="./images/male-lifting-weights-min.jpg"
-          alt="Male lifting weights"
-          width="347"
-          height="399"
-        />
-        <img
-          class="faq-img-situps"
-          src="./images/female-doing-situps-min.jpg"
-          alt="Female doing situps"
-          width="241"
-          height="359"
-        />
-        <h2 class="faq-title">Meet your new body</h2>
-        <p class="faq-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget
-          lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec
-          felis. Sed id egestasegestas risus, ut imperdiet augue.
-        </p>
-        <button class="faq-btn" type="button">View the FAQ</button>
+        <div class="container">
+          <div class="faq-img-wrapper">
+            <img
+              class="faq-img-weights"
+              src="./images/male-lifting-weights-min.jpg"
+              alt="Male lifting weights"
+              width="347"
+              height="399"
+            />
+            <img
+              class="faq-img-situps"
+              src="./images/female-doing-situps-min.jpg"
+              alt="Female doing situps"
+              width="241"
+              height="359"
+            />
+          </div>
+          <h2 class="faq-title">Meet your new body</h2>
+          <p class="faq-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+            gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.
+          </p>
+          <button class="faq-btn" type="button">View the FAQ</button>
+        </div>
       </section>
 
       <section class="active">
-        <h2 class="active-title">Become more than you are.</h2>
-        <p class="active-text">
-          Staying active is great fun and keeps you healthy. Check out how you
-          can join in.
-        </p>
-        <button class="active-btn" type="button">Let’s do it!</button>
+        <div class="container">
+          <h2 class="active-title">Become more than you are.</h2>
+          <p class="active-text">
+            Staying active is great fun and keeps you healthy. Check out how you
+            can join in.
+          </p>
+          <button class="active-btn" type="button">Let’s do it!</button>
+        </div>
       </section>
 
       <section class="facilities">
-        <h2 class="facilities-title">Premium Facilities</h2>
-        <p class="facilities-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget
-          lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec
-          felis. Sed id egestasegestas risus, ut imperdiet augue.
-        </p>
-        <button class="facilities-btn" type="button">Learn more</button>
-        <img
-          class="facilities-img-gym"
-          src="./images/Gym-Room-min.jpg"
-          alt="Gym room"
-          width="444"
-          height="296"
-        />
-        <img
-          class="facilities-img-weights"
-          src="./images/Weights-min.jpg"
-          alt="Weights"
-          width="422"
-          height="281"
-        />
+        <div class="container">
+          <div class="facilities-img-wrapper">
+            <img
+              class="facilities-img-gym"
+              src="./images/Gym-Room-min.jpg"
+              alt="Gym room"
+              width="444"
+              height="296"
+            />
+            <img
+              class="facilities-img-weights"
+              src="./images/Weights-min.jpg"
+              alt="Weights"
+              width="422"
+              height="281"
+            />
+          </div>
+          <h2 class="facilities-title">Premium Facilities</h2>
+          <p class="facilities-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+            gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.
+          </p>
+          <button class="facilities-btn" type="button">Learn more</button>
+        </div>
       </section>
 
       <section class="stories">
-        <h2 class="stories-title">Real Stories from Real Customers</h2>
-        <p class="stories-text">Be inspired with these experiences.</p>
-        <ul class="stories-list">
-          <li class="stories-item">
-            <h3 class="stories-item-title">3Kg lost!</h3>
-            <p class="stories-item-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
-              gravida nec felis. Sed id egestasegestas risu.
-            </p>
-            <img
-              class="stories-item-img"
-              src="./images/Portrait-of-person-min.png"
-              alt="James John"
-              width="59"
-              height="57"
-            />
-            <h4 class="stories-item-subtitle">James John</h4>
-            <p class="stories-item-subtext">Mother of two</p>
-          </li>
-          <li class="stories-item">
-            <h3 class="stories-item-title">17Kg lost!</h3>
-            <p class="stories-item-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              eget lectus urna. Nulla magna tortor, bibendum in mo.
-            </p>
-            <img
-              class="stories-item-img"
-              src="./images/Portrait-of-person-1-min.png"
-              alt="Mary Patricia"
-              width="59"
-              height="57"
-            />
-            <h4 class="stories-item-subtitle">Mary Patricia</h4>
-            <p class="stories-item-subtext">Mother of two</p>
-          </li>
-          <li class="stories-item">
-            <h3 class="stories-item-title">43Kg lost!</h3>
-            <p class="stories-item-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img
-              class="stories-item-img"
-              src="./images/Portrait-of-person-2-min.png"
-              alt="Robert Micheal"
-              width="59"
-              height="57"
-            />
-            <h4 class="stories-item-subtitle">Robert Micheal</h4>
-            <p class="stories-item-subtext">Mother of two</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="stories-title">Real Stories from Real Customers</h2>
+          <p class="stories-text">Be inspired with these experiences.</p>
+          <ul class="stories-list">
+            <li class="stories-item">
+              <h3 class="stories-item-title">3Kg lost!</h3>
+              <p class="stories-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+                gravida nec felis. Sed id egestasegestas risu.
+              </p>
+              <div class="stories-item-img-wrapper">
+                <img
+                  class="stories-item-img"
+                  src="./images/Portrait-of-person-min.png"
+                  alt="James John"
+                  width="59"
+                  height="57"
+                />
+                <div class="stories-item-text-wrapper">
+                  <h4 class="stories-item-subtitle">James John</h4>
+                  <p class="stories-item-subtext">Mother of two</p>
+                </div>
+              </div>
+            </li>
+            <li class="stories-item">
+              <h3 class="stories-item-title">17Kg lost!</h3>
+              <p class="stories-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                eget lectus urna. Nulla magna tortor, bibendum in mo.
+              </p>
+              <img
+                class="stories-item-img"
+                src="./images/Portrait-of-person-1-min.png"
+                alt="Mary Patricia"
+                width="59"
+                height="57"
+              />
+              <h4 class="stories-item-subtitle">Mary Patricia</h4>
+              <p class="stories-item-subtext">Mother of two</p>
+            </li>
+            <li class="stories-item robert">
+              <h3 class="stories-item-title">43Kg lost!</h3>
+              <p class="stories-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <img
+                class="stories-item-img"
+                src="./images/Portrait-of-person-2-min.png"
+                alt="Robert Micheal"
+                width="59"
+                height="57"
+              />
+              <h4 class="stories-item-subtitle">Robert Micheal</h4>
+              <p class="stories-item-subtext">Mother of two</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="app">
-        <h2 class="app-title">Don’t forget our app</h2>
-        <p class="app-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget
-          lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec
-          felis. Sed id egestasegestas risus, ut imperdiet augue.
-        </p>
-        <p class="app-download-text">Download now:</p>
-        <ul class="app-list">
-          <li class="app-item">
-            <a class="app-item-link" href=""
-              ><img
-                class="app-item-img"
-                src="./images/Google-Play-Badge-min.png"
-                alt="Google Play badge"
-                width="135"
-                height="40"
-            /></a>
-          </li>
-          <li class="app-item">
-            <a class="app-item-link" href=""
-              ><img
-                class="app-item-img"
-                src="./images/App-Store-Badge-min.png"
-                alt="App Store badge"
-                width="135"
-                height="40"
-            /></a>
-          </li>
-        </ul>
-        <img
-          class="app-img-first"
-          src="./images/Phone-Mockup-1-min.png"
-          alt="Phone mockup"
-          width="232"
-          height="464"
-        />
-        <img
-          class="app-img-second"
-          src="./images/Phone Mockup-2-min.png"
-          alt="Phone mockup"
-          width="232"
-          height="380"
-        />
+        <div class="container">
+          <h2 class="app-title">Don’t forget our app</h2>
+          <p class="app-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+            gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.
+          </p>
+          <p class="app-download-text">Download now:</p>
+          <ul class="app-list">
+            <li class="app-item">
+              <a class="app-item-link" href=""
+                ><img
+                  class="app-item-img"
+                  src="./images/Google-Play-Badge-min.png"
+                  alt="Google Play badge"
+                  width="135"
+                  height="40"
+              /></a>
+            </li>
+            <li class="app-item">
+              <a class="app-item-link" href=""
+                ><img
+                  class="app-item-img"
+                  src="./images/App-Store-Badge-min.png"
+                  alt="App Store badge"
+                  width="135"
+                  height="40"
+              /></a>
+            </li>
+          </ul>
+          <div class="app-img-wrapper">
+            <img
+              class="app-img-first"
+              src="./images/Phone-Mockup-1-min.png"
+              alt="Phone mockup"
+              width="232"
+              height="464"
+            />
+            <img
+              class="app-img-second"
+              src="./images/Phone Mockup-2-min.png"
+              alt="Phone mockup"
+              width="232"
+              height="380"
+            />
+          </div>
+        </div>
       </section>
 
       <section class="social">
-        <h2 class="social-title">Social</h2>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-item-link" href="">fb</a>
-          </li>
-          <li class="social-item">
-            <a class="social-item-link" href="">yt</a>
-          </li>
-          <li class="social-item">
-            <a class="social-item-link" href="">insta</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="social-title">Social</h2>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-item-link" href="">fb</a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link" href="">yt</a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link" href="">insta</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a class="footer-logo-link" href="./index.html"
-        >Good<span class="footer-span">lyfe</span></a
-      >
-      <p class="footer-text">
-        Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam
-        ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
-      </p>
-      <ul class="footer-soc-list">
-        <li class="footer-soc-item"><a href="">insta</a></li>
-        <li class="footer-soc-item"><a href="">dribbble</a></li>
-        <li class="footer-soc-item"><a href="">twi</a></li>
-        <li class="footer-soc-item"><a href="">yt</a></li>
-      </ul>
-      <nav class="footer-nav">
-        <ul class="footer-nav-list">
-          <li class="footer-nav-item">
-            <p class="footer-item-text">Quick Links</p>
-            <ul class="footer-nav-sublist">
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Classes</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Timetable</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Clubs</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Nutrition</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Free Trial</a>
-              </li>
-            </ul>
+      <div class="container">
+        <a class="footer-logo-link" href="./index.html"
+          >Good<span class="footer-span">lyfe</span></a
+        >
+        <p class="footer-text">
+          Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc
+          quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
+        </p>
+        <ul class="footer-soc-list">
+          <li class="footer-soc-item"><a href="">insta</a></li>
+          <li class="footer-soc-item"><a href="">dribbble</a></li>
+          <li class="footer-soc-item"><a href="">twi</a></li>
+          <li class="footer-soc-item"><a href="">yt</a></li>
+        </ul>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <p class="footer-item-text">Quick Links</p>
+              <ul class="footer-nav-sublist">
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Classes</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Timetable</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Clubs</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Nutrition</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Free Trial</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-nav-item guides">
+              <p class="footer-item-text">Guides</p>
+              <ul class="footer-nav-sublist">
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Weight Loss</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Strength Gain</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Crossfit</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Washboard Abs</a>
+                </li>
+                <li class="footer-nav-subitem">
+                  <a class="footer-nav-sublink" href="">Dieting</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-address-text">Reach us</p>
+        <address class="footer-address">
+          <ul class="footer-address-list">
+            <li class="footer-address-item">
+              <a class="footer-address-link" href="mailto:admin@goodlyfe.co"
+                >admin@goodlyfe.co</a
+              >
+            </li>
+            <li class="footer-address-item">
+              <a class="footer-address-link" href="tel:+889876543210"
+                >+88 98765 43210</a
+              >
+            </li>
+            <li class="footer-address-item">
+              <a class="footer-address-link" href=""
+                >90210 Beverly Hills <br />
+                California USA</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="footer-bottom-list">
+          <li class="footer-bottom-item">
+            <a class="footer-bottom-link" href="">Terms & Conditions</a>
           </li>
-          <li class="footer-nav-item">
-            <p class="footer-item-text">Guides</p>
-            <ul class="footer-nav-sublist">
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Weight Loss</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Strength Gain</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Crossfit</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Washboard Abs</a>
-              </li>
-              <li class="footer-nav-subitem">
-                <a class="footer-nav-sublink" href="">Dieting</a>
-              </li>
-            </ul>
+          <li class="footer-bottom-item">
+            <a class="footer-bottom-link" href="">Privacy Policy</a>
+          </li>
+          <li class="footer-bottom-item">
+            <a class="footer-bottom-link" href="">Sitemap</a>
+          </li>
+          <li class="footer-bottom-item">
+            <a class="footer-bottom-link" href="">Disclaimer</a>
           </li>
         </ul>
-      </nav>
-      <p class="footer-address-text">Reach us</p>
-      <address class="footer-address">
-        <ul class="footer-address-list">
-          <li class="footer-address-item">
-            <a class="footer-address-link" href="mailto:admin@goodlyfe.co"
-              >admin@goodlyfe.co</a
-            >
-          </li>
-          <li class="footer-address-item">
-            <a class="footer-address-link" href="tel:+889876543210"
-              >+88 98765 43210</a
-            >
-          </li>
-          <li class="footer-address-item">
-            <a class="footer-address-link" href=""
-              >90210 Beverly Hills California USA</a
-            >
-          </li>
-        </ul>
-      </address>
-      <p class="footer-bottom-text">© 2020 GoodLyfe. All rights reserved</p>
-      <ul class="footer-bottom-list">
-        <li class="footer-bottom-item">
-          <a class="footer-bottom-link" href="">Terms & Conditions</a>
-        </li>
-        <li class="footer-bottom-item">
-          <a class="footer-bottom-link" href="">Privacy Policy</a>
-        </li>
-        <li class="footer-bottom-item">
-          <a class="footer-bottom-link" href="">Sitemap</a>
-        </li>
-        <li class="footer-bottom-item">
-          <a class="footer-bottom-link" href="">Disclaimer</a>
-        </li>
-      </ul>
+        <p class="footer-bottom-text">© 2020 GoodLyfe. All rights reserved</p>
+      </div>
     </footer>
   </body>
 </html>
