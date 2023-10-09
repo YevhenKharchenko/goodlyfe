@@ -58,6 +58,9 @@ img {
   background-color: #e43071;
   padding-top: 20px;
   padding-bottom: 16px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-nav {
@@ -117,7 +120,15 @@ img {
 
 .hero {
   padding-top: 103px;
-  padding-bottom: 28px;
+  padding-bottom: 166px;
+  background-image: url(../images/Path-2-m-min.png),
+    linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)),
+    url(../images/Female-working-out-m-min.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 50%, center, top 0px left 50%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-main-title {
@@ -130,11 +141,12 @@ img {
 }
 
 .hero-span {
-  color: var(--Sub-Pink, #ffc1d8);
-  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.1;
-  display: none;
+  margin-bottom: 23px;
 }
 
 .hero-btn {
@@ -164,11 +176,28 @@ img {
 
 .faq-img-wrapper {
   margin-bottom: 14px;
+  position: relative;
+  height: 313px;
 }
 
 .faq-img-weights {
+  display: none;
 }
+
+.faq-img-weights-m {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .faq-img-situps {
+  display: none;
+}
+
+.faq-img-situps-m {
+  position: absolute;
+  top: 95px;
+  left: 116px;
 }
 
 .faq-title {
@@ -210,6 +239,14 @@ img {
 .active {
   padding-top: 75px;
   padding-bottom: 82px;
+  background-image: linear-gradient(
+      rgba(57, 57, 57, 0.22),
+      rgba(57, 57, 57, 0.22)
+    ),
+    url(../images/Woman-doing-situps-m-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 443px;
 }
 
 .active-title {
@@ -262,6 +299,8 @@ img {
 
 .facilities-img-wrapper {
   margin-bottom: 16px;
+  position: relative;
+  height: 264px;
 }
 
 .facilities-title {
@@ -297,8 +336,23 @@ img {
 }
 
 .facilities-img-gym {
+  display: none;
 }
+
+.facilities-img-gym-m {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .facilities-img-weights {
+  display: none;
+}
+
+.facilities-img-weights-m {
+  position: absolute;
+  top: 70px;
+  left: 84px;
 }
 
 /* ============================== */
@@ -310,6 +364,13 @@ img {
     #f4e3e9;
   padding-top: 48px;
   padding-bottom: 38px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stories > .container {
+  padding-right: 0;
 }
 
 .stories-title {
@@ -329,18 +390,45 @@ img {
 }
 
 .stories-list {
+  position: relative;
+  overflow: hidden;
+  padding: 2px;
 }
 
 .stories-item {
   border-radius: 6.966px;
   background-color: #fff;
   box-shadow: 0.69663px 2.78652px 5.57303px 0px rgba(0, 0, 0, 0.18);
-  padding: 24px 22px 26px 44px;
+  padding: 24px 22px 26px 18px;
   width: 243px;
+  position: relative;
+}
+
+.stories-item::before {
+  content: "“";
+  /* background-image: url(../images/Real-Stories-Copy-min.png);
+  background-repeat: no-repeat; */
+  position: absolute;
+  top: 65px;
+  left: 19px;
+  width: 20px;
+  height: 47px;
+  color: rgba(228, 48, 113, 0.3);
+  font-family: Times New Roman;
+  font-size: 40.404px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .robert {
   display: none;
+}
+
+.mary {
+  position: absolute;
+  top: 0;
+  left: 270px;
 }
 
 .stories-item-title {
@@ -356,12 +444,14 @@ img {
   font-size: 12px;
   line-height: 1.78;
   margin-bottom: 15px;
-  width: 176px;
+  width: 202px;
+  padding-left: 26px;
 }
 
 .stories-item-img-wrapper {
   display: flex;
   gap: 14px;
+  padding-left: 26px;
 }
 
 .stories-item-text-wrapper {
@@ -393,7 +483,14 @@ img {
 .app {
   background-color: #e43071;
   padding-top: 50px;
-  padding-bottom: 98px;
+  padding-bottom: 0;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app > .container {
+  padding-right: 0;
 }
 
 .app-title {
@@ -402,12 +499,14 @@ img {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 10px;
+  width: 269px;
 }
 
 .app-text {
   color: #ffffff;
   line-height: normal;
   margin-bottom: 32px;
+  width: 269px;
 }
 
 .app-download-text {
@@ -427,13 +526,32 @@ img {
 }
 
 .app-img-wrapper {
+  position: relative;
+  height: 455px;
+  overflow: hidden;
 }
 
 .app-item-img {
 }
+
 .app-img-first {
+  display: none;
 }
+
+.app-img-first-m {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .app-img-second {
+  display: none;
+}
+
+.app-img-second-m {
+  position: absolute;
+  top: 122px;
+  right: 0;
 }
 
 /* ======================= */
@@ -444,6 +562,10 @@ img {
   background-color: var(--Background-Grey, #ededed);
   padding-top: 44px;
   padding-bottom: 66px;
+  margin-top: -60px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-title {
@@ -481,6 +603,10 @@ img {
 .footer {
   background-color: var(--default-black, #0b0d17);
   padding-top: 40px;
+  padding-bottom: 25px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-logo-link {
