@@ -47,7 +47,22 @@
               <a class="header-item-link" href="">Search</a>
             </li>
           </ul>
-          <button class="header-menu-btn" type="button"></button>
+          <button class="header-search-btn" type="button">
+            <svg width="17" height="17" class="header-search-icon">
+              <use href="./images/icons.svg#icon-Search-Icon"></use>
+            </svg>
+          </button>
+          <button class="header-menu-btn" type="button">
+            <svg class="header-menu-icon" width="24" height="2">
+              <use href="./images/icons.svg#icon-Rectangle-7"></use>
+            </svg>
+            <svg class="header-menu-icon" width="24" height="2">
+              <use href="./images/icons.svg#icon-Rectangle-7"></use>
+            </svg>
+            <svg class="header-menu-icon" width="24" height="2">
+              <use href="./images/icons.svg#icon-Rectangle-7"></use>
+            </svg>
+          </button>
         </nav>
         <button class="header-btn" type="button">Login</button>
       </div>
@@ -60,6 +75,13 @@
             Welcome to Good<span class="hero-span">lyfe</span> Gyms
           </h1>
           <button class="hero-btn" type="button">See the benefits</button>
+          <div class="tab-bar">
+            <div class="tab"></div>
+            <div class="tab"></div>
+            <div class="tab-active"></div>
+            <div class="tab"></div>
+            <div class="tab"></div>
+          </div>
         </div>
       </section>
 
@@ -113,6 +135,13 @@
             can join in.
           </p>
           <button class="active-btn" type="button">Let’s do it!</button>
+          <div class="tab-bar">
+            <div class="tab"></div>
+            <div class="tab"></div>
+            <div class="tab-active"></div>
+            <div class="tab"></div>
+            <div class="tab"></div>
+          </div>
         </div>
       </section>
 
@@ -250,36 +279,7 @@
               /></a>
             </li>
           </ul>
-          <div class="app-img-wrapper">
-            <img
-              class="app-img-first"
-              src="./images/Phone-Mockup-1-min.png"
-              alt="Phone mockup"
-              width="232"
-              height="464"
-            />
-            <img
-              class="app-img-first-m"
-              src="./images/Phone-Mockup-1-m-min.png"
-              alt="Phone mockup"
-              width="166"
-              height="333"
-            />
-            <img
-              class="app-img-second"
-              src="./images/Phone-Mockup-2-min.png"
-              alt="Phone mockup"
-              width="232"
-              height="380"
-            />
-            <img
-              class="app-img-second-m"
-              src="./images/Phone-Mockup-2-m-min.png"
-              alt="Phone mockup"
-              width="166"
-              height="333"
-            />
-          </div>
+          <div class="app-img-wrapper"></div>
         </div>
       </section>
 
@@ -288,13 +288,22 @@
           <h2 class="social-title">Social</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-item-link" href="">fb</a>
+              <a class="social-item-link" href=""
+                ><svg class="social-icon" width="10" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
             </li>
             <li class="social-item">
-              <a class="social-item-link" href="">yt</a>
+              <a class="social-item-link" href=""
+                ><svg class="social-icon" width="17" height="20">
+                  <use href="./images/icons.svg#icon-youtube"></use></svg
+              ></a>
             </li>
             <li class="social-item">
-              <a class="social-item-link" href="">insta</a>
+              <a class="social-item-link" href=""
+                ><svg class="social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
@@ -311,10 +320,30 @@
           quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
         </p>
         <ul class="footer-soc-list">
-          <li class="footer-soc-item"><a href="">insta</a></li>
-          <li class="footer-soc-item"><a href="">dribbble</a></li>
-          <li class="footer-soc-item"><a href="">twi</a></li>
-          <li class="footer-soc-item"><a href="">yt</a></li>
+          <li class="footer-soc-item">
+            <a class="footer-soc-link" href=""
+              ><svg class="footer-soc-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-footer-ig"></use></svg
+            ></a>
+          </li>
+          <li class="footer-soc-item">
+            <a class="footer-soc-link" href=""
+              ><svg class="footer-soc-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-footer-dribbble"></use></svg
+            ></a>
+          </li>
+          <li class="footer-soc-item">
+            <a class="footer-soc-link" href=""
+              ><svg class="footer-soc-icon" width="12" height="10">
+                <use href="./images/icons.svg#icon-footer-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="footer-soc-item">
+            <a class="footer-soc-link" href=""
+              ><svg class="footer-soc-icon" width="13" height="9">
+                <use href="./images/icons.svg#icon-footer-yt"></use></svg
+            ></a>
+          </li>
         </ul>
         <nav class="footer-nav">
           <ul class="footer-nav-list">
@@ -365,16 +394,22 @@
           <ul class="footer-address-list">
             <li class="footer-address-item">
               <a class="footer-address-link" href="mailto:admin@goodlyfe.co"
+                ><svg width="20" height="18" class="footer-address-icon">
+                  <use href="./images/icons.svg#icon-Message"></use></svg
                 >admin@goodlyfe.co</a
               >
             </li>
             <li class="footer-address-item">
               <a class="footer-address-link" href="tel:+889876543210"
+                ><svg width="20" height="20" class="footer-address-icon">
+                  <use href="./images/icons.svg#icon-Calling"></use></svg
                 >+88 98765 43210</a
               >
             </li>
             <li class="footer-address-item">
               <a class="footer-address-link" href=""
+                ><svg width="17" height="20" class="footer-address-icon">
+                  <use href="./images/icons.svg#icon-Location"></use></svg
                 >90210 Beverly Hills <br />
                 California USA</a
               >

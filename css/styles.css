@@ -64,6 +64,8 @@ img {
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav-link {
@@ -96,9 +98,33 @@ img {
   line-height: 1.1;
 }
 
-.header-menu-btn {
+.header-search-btn {
   margin-left: auto;
-  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-search-icon {
+  stroke: #ffffff;
+  fill: transparent;
+}
+
+.header-menu-btn {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header-menu-icon {
+  fill: #ffffff;
 }
 
 .header-btn {
@@ -120,7 +146,7 @@ img {
 
 .hero {
   padding-top: 103px;
-  padding-bottom: 166px;
+  padding-bottom: 28px;
   background-image: url(../images/Path-2-m-min.png),
     linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)),
     url(../images/Female-working-out-m-min.jpg);
@@ -163,6 +189,17 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 42px;
+  margin-bottom: 121px;
+  transition: background-color 250ms ease, outline 250ms ease;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #be285e;
+}
+
+.hero-btn:focus {
+  outline: 8px solid #ffdae7;
 }
 
 /* ======================== */
@@ -204,7 +241,7 @@ img {
   color: #e43071;
   font-size: 40px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
   margin-bottom: 11px;
   width: 261px;
 }
@@ -230,6 +267,17 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 12px 80px;
+  transition: background-color 250ms ease, outline 250ms ease;
+}
+
+.faq-btn:hover,
+.faq-btn:active {
+  color: #be285e;
+  border-color: #be285e;
+}
+
+.faq-btn:focus {
+  outline: 8px solid #ffdae7;
 }
 
 /* ======================= */
@@ -238,7 +286,7 @@ img {
 
 .active {
   padding-top: 75px;
-  padding-bottom: 82px;
+  padding-bottom: 25px;
   background-image: linear-gradient(
       rgba(57, 57, 57, 0.22),
       rgba(57, 57, 57, 0.22)
@@ -246,7 +294,7 @@ img {
     url(../images/Woman-doing-situps-m-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 320px 443px;
+  background-size: 320px 100%;
 }
 
 .active-title {
@@ -255,7 +303,7 @@ img {
   text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46);
   font-size: 42px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.1;
   margin-bottom: 10px;
   width: 252px;
 }
@@ -270,6 +318,8 @@ img {
   line-height: normal;
   width: 257px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .active-btn {
@@ -286,6 +336,38 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 100px;
+  margin-bottom: 40px;
+  transition: background-color 250ms ease, outline 250ms ease;
+}
+
+.active-btn:hover,
+.active-btn:active {
+  background-color: #be285e;
+}
+
+.active-btn:focus {
+  outline: 8px solid #ffdae7;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.tab-active {
+  width: 17px;
+  height: 17px;
+  background-color: #e43071;
+  border-radius: 50%;
 }
 
 /* ========================== */
@@ -307,7 +389,7 @@ img {
   color: #e43071;
   font-size: 40px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
   width: 259px;
   margin-bottom: 13px;
 }
@@ -333,6 +415,17 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 14px 95px;
+  transition: background-color 250ms ease, outline 250ms ease;
+}
+
+.facilities-btn:hover,
+.facilities-btn:active {
+  color: #be285e;
+  border-color: #be285e;
+}
+
+.facilities-btn:focus {
+  outline: 8px solid #ffdae7;
 }
 
 .facilities-img-gym {
@@ -360,17 +453,21 @@ img {
 /* ==========STORIES========== */
 
 .stories {
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%),
-    #f4e3e9;
+  background: url(../images/stories-hidden-item.png),
+    linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%), #f4e3e9;
   padding-top: 48px;
   padding-bottom: 38px;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: bottom 30px right, center;
+  background-size: 23px 335px, 100%;
 }
 
 .stories > .container {
   padding-right: 0;
+  padding-left: 28px;
 }
 
 .stories-title {
@@ -391,8 +488,6 @@ img {
 
 .stories-list {
   position: relative;
-  overflow: hidden;
-  padding: 2px;
 }
 
 .stories-item {
@@ -426,9 +521,7 @@ img {
 }
 
 .mary {
-  position: absolute;
-  top: 0;
-  left: 270px;
+  display: none;
 }
 
 .stories-item-title {
@@ -497,7 +590,7 @@ img {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.2;
   margin-bottom: 10px;
   width: 269px;
 }
@@ -528,30 +621,15 @@ img {
 .app-img-wrapper {
   position: relative;
   height: 455px;
-  overflow: hidden;
+  background-image: url(../images/iPhone-X-m-min.png),
+    url(../images/Screen-m-min.png), url(../images/iPhone-X-bottom-m-min.png),
+    url(../images/Screen-bottom-m-min.png);
+  background-repeat: no-repeat;
+  background-position: top left, top 10px left 10px, bottom right,
+    bottom 10px right;
 }
 
 .app-item-img {
-}
-
-.app-img-first {
-  display: none;
-}
-
-.app-img-first-m {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.app-img-second {
-  display: none;
-}
-
-.app-img-second-m {
-  position: absolute;
-  top: 122px;
-  right: 0;
 }
 
 /* ======================= */
@@ -562,10 +640,10 @@ img {
   background-color: var(--Background-Grey, #ededed);
   padding-top: 44px;
   padding-bottom: 66px;
-  margin-top: -60px;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -24px;
 }
 
 .social-title {
@@ -594,6 +672,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-icon {
+  fill: #e43071;
 }
 
 /* ========================== */
@@ -643,6 +725,19 @@ img {
 }
 
 .footer-soc-item {
+}
+
+.footer-soc-link {
+  padding: 6px;
+  background-color: #23252e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-icon {
+  fill: #ffffff;
 }
 
 .footer-nav {
@@ -701,8 +796,6 @@ img {
 }
 
 .footer-address-item {
-  padding-left: 30px;
-  font-style: normal;
 }
 
 .footer-address-item:not(:last-child) {
@@ -717,6 +810,13 @@ img {
   font-weight: 400;
   line-height: 1.71;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-address-icon {
+  fill: #e43071;
 }
 
 .footer-bottom-text {
@@ -737,6 +837,21 @@ img {
 }
 
 .footer-bottom-item {
+  position: relative;
+}
+
+.footer-bottom-item:nth-child(odd)::after {
+  content: "|";
+  color: var(--text-gray-300, #d9dbe1);
+  text-align: center;
+  font-feature-settings: "liga" off;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  position: absolute;
+  right: -8px;
+  top: center;
 }
 
 .footer-bottom-link {
