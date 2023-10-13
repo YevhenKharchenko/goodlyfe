@@ -58,9 +58,6 @@ img {
   background-color: #e43071;
   padding-top: 20px;
   padding-bottom: 16px;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header-nav {
@@ -152,9 +149,6 @@ img {
     url(../images/Female-working-out-m-min.jpg);
   background-repeat: no-repeat;
   background-position: bottom 0px left 50%, center, top 0px left 50%;
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-main-title {
@@ -453,16 +447,23 @@ img {
 /* ==========STORIES========== */
 
 .stories {
-  background: url(../images/stories-hidden-item.png),
-    linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%), #f4e3e9;
-  padding-top: 48px;
-  padding-bottom: 38px;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%),
+    #f4e3e9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.stories-background-container {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 48px;
+  padding-bottom: 38px;
+  background: url(../images/stories-hidden-item.png);
   background-repeat: no-repeat;
-  background-position: bottom 30px right, center;
-  background-size: 23px 335px, 100%;
+  background-position: bottom 30px right;
+  background-size: 23px 335px;
 }
 
 .stories > .container {
@@ -577,9 +578,6 @@ img {
   background-color: #e43071;
   padding-top: 50px;
   padding-bottom: 0;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .app > .container {
@@ -640,9 +638,6 @@ img {
   background-color: var(--Background-Grey, #ededed);
   padding-top: 44px;
   padding-bottom: 66px;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: -24px;
 }
 
@@ -686,9 +681,6 @@ img {
   background-color: var(--default-black, #0b0d17);
   padding-top: 40px;
   padding-bottom: 25px;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer-logo-link {
