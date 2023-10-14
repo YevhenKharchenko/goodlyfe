@@ -43,15 +43,6 @@ img {
   margin-right: auto;
 }
 
-/* .container {
-  width: 100%;
-  max-width: 1393px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 /* ==========HEADER========== */
 
 .header {
@@ -148,7 +139,7 @@ img {
     linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)),
     url(../images/Female-working-out-m-min.jpg);
   background-repeat: no-repeat;
-  background-position: bottom 0px left 50%, center, top 0px left 50%;
+  background-position: bottom 0px center, center, top 0px center;
 }
 
 .hero-main-title {
@@ -430,6 +421,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .facilities-img-weights {
@@ -753,6 +745,7 @@ img {
 
 .footer-nav-sublist {
 }
+
 .footer-nav-subitem:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -856,3 +849,520 @@ img {
 }
 
 /* ========================== */
+
+/* ==========DESKTOP========== */
+
+@media (min-width: 1393px) {
+  .container {
+    width: 100%;
+    max-width: 1393px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+
+  .header > .container {
+    display: flex;
+  }
+
+  .header-nav {
+  }
+
+  .header-nav-link {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    margin-right: 172px;
+  }
+
+  .header-span {
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 76px;
+  }
+
+  .header-search-btn {
+    margin-left: 6px;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-btn {
+    display: block;
+    margin-left: auto;
+    width: 166px;
+    height: 50px;
+  }
+
+  .hero {
+    padding-top: 241px;
+    padding-bottom: 43px;
+    background-image: url(../images/Path-2-min.png),
+      linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)),
+      url(../images/Female-working-out-min.jpg);
+    background-position: bottom 0 center, center, top 0px center;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-main-title {
+    font-size: 70px;
+    margin-bottom: 16px;
+    width: 678px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-span {
+    color: var(--Sub-Pink, #ffc1d8);
+    font-size: 70px;
+  }
+
+  .hero-btn {
+    padding: 15px 56px;
+    margin-bottom: 156px;
+  }
+
+  .faq {
+    padding-top: 95px;
+    padding-bottom: 122px;
+  }
+
+  .faq > .container {
+    display: flex;
+    padding-left: 156px;
+  }
+
+  .faq-img-wrapper {
+    margin-bottom: 0;
+    position: relative;
+    height: 503px;
+    width: 440px;
+  }
+
+  .faq-img-weights {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .faq-img-weights-m {
+    display: none;
+  }
+
+  .faq-img-situps {
+    display: block;
+    position: absolute;
+    top: 144px;
+    left: 199px;
+  }
+
+  .faq-img-situps-m {
+    display: none;
+  }
+
+  .faq-text-wrapper {
+    margin-left: 179px;
+    padding-top: 103px;
+  }
+
+  .faq-title {
+    margin-bottom: 6px;
+    width: 414px;
+  }
+
+  .faq-text {
+    width: 540px;
+    margin-bottom: 30px;
+  }
+
+  .faq-btn {
+    padding: 15px 65px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .active {
+    padding-top: 231px;
+    padding-bottom: 26px;
+    width: 1440px;
+    background-image: linear-gradient(
+        rgba(57, 57, 57, 0.22),
+        rgba(57, 57, 57, 0.22)
+      ),
+      url(../images/Woman-doing-situps-min.jpg);
+    background-position: top center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .active-title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .active-text {
+    width: 433px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .active-btn {
+    padding: 15px 77px;
+    margin-bottom: 204px;
+  }
+
+  .facilities {
+    padding-top: 224px;
+    padding-bottom: 129px;
+  }
+
+  .facilities > .container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 134px;
+    padding-right: 53px;
+    justify-content: space-between;
+  }
+
+  .facilities-img-wrapper {
+    margin-bottom: 0;
+    position: relative;
+    height: 435px;
+    width: 572px;
+  }
+
+  .facilities-img-gym {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .facilities-img-gym-m {
+    display: none;
+  }
+
+  .facilities-img-weights {
+    display: block;
+    position: absolute;
+    top: 154px;
+    left: 150px;
+  }
+
+  .facilities-img-weights-m {
+    display: none;
+  }
+
+  .facilities-text-wrapper {
+    padding-top: 97px;
+  }
+
+  .facilities-title {
+    width: 383px;
+    margin-bottom: 10px;
+  }
+
+  .facilities-text {
+    width: 489px;
+    margin-bottom: 20px;
+  }
+
+  .facilities-btn {
+    margin-left: 0;
+    margin-right: auto;
+    padding: 15px 72px;
+  }
+
+  .stories {
+    margin-bottom: -33px;
+  }
+
+  .stories-background-container {
+    width: 1393px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 126px;
+    padding-bottom: 0;
+    background-image: none;
+  }
+
+  .stories-background-container > .container {
+    padding-right: 0;
+    padding-left: 233px;
+  }
+
+  .stories-title {
+    font-size: 48px;
+    width: 414px;
+    margin-bottom: 12px;
+  }
+
+  .stories-text {
+    font-size: 18px;
+    width: 313px;
+    margin-bottom: 0;
+  }
+
+  .stories-list {
+    position: relative;
+    width: 831px;
+    height: 654px;
+    transform: translate(97px, -114px);
+  }
+
+  .stories-item {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.18);
+    padding: 35px 32px 36px 27px;
+    width: 0;
+    position: relative;
+  }
+
+  .stories-item::before {
+    top: 94px;
+    left: 27px;
+    width: 29px;
+    height: 67px;
+    font-size: 58px;
+  }
+
+  .stories-item-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  .stories-item-text {
+    font-size: 18px;
+    padding-left: 37px;
+  }
+
+  .stories-item-img-wrapper {
+    gap: 17px;
+    padding-left: 39px;
+  }
+
+  .james {
+    width: 349px;
+    position: absolute;
+    top: 141px;
+    left: 0;
+  }
+
+  .j-text {
+    width: 290px;
+  }
+
+  .mary {
+    display: block;
+    width: 449px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .m-text {
+    width: 390px;
+  }
+
+  .robert {
+    display: block;
+    width: 351px;
+    position: absolute;
+    bottom: 0;
+    right: 98px;
+  }
+
+  .r-text {
+    width: 293px;
+  }
+
+  .app {
+    padding-top: 112px;
+    padding-bottom: 76px;
+  }
+
+  .app-background-container > .container {
+    padding-right: 15px;
+    padding-left: 218px;
+  }
+
+  .app-background-container {
+    position: relative;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app-text-container {
+    height: 303px;
+    position: relative;
+  }
+
+  .app-title {
+    margin-bottom: 4px;
+    width: 412px;
+  }
+
+  .app-text {
+    margin-bottom: 20px;
+    width: 489px;
+  }
+
+  .app-download-text {
+    margin-bottom: 9px;
+  }
+
+  .app-list {
+    margin-bottom: 39px;
+  }
+
+  .app-img-wrapper {
+    position: absolute;
+    width: 496px;
+    height: 518px;
+    background-image: url(../images/iPhone-X-min.png),
+      url(../images/Screen-min.png), url(../images/iPhone-X-bottom-min.png),
+      url(../images/Screen-bottom-min.png);
+    background-repeat: no-repeat;
+    background-position: top left, top 13px left 15px, bottom right,
+      bottom right 15px;
+    top: -139px;
+    right: 147px;
+  }
+
+  .social {
+    padding-top: 64px;
+    padding-bottom: 71px;
+    margin-top: 0;
+  }
+
+  .social-title {
+    margin-bottom: 18px;
+  }
+
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+  .social-item {
+    width: 110px;
+    height: 110px;
+  }
+
+  .facebook {
+    width: 15px;
+    height: 30px;
+  }
+
+  .youtube {
+    width: 25px;
+    height: 30px;
+  }
+
+  .instagram {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 24px;
+  }
+
+  .footer > .container {
+    padding-left: 144px;
+    padding-right: 139px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 103px;
+  }
+
+  .footer-logo-wrapper {
+  }
+
+  .footer-logo-link {
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  .footer-text {
+    margin-bottom: 24px;
+  }
+
+  .footer-soc-list {
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-nav-item {
+    gap: 36px;
+    width: 255px;
+  }
+
+  .guides {
+    display: block;
+  }
+
+  .footer-address {
+    margin-bottom: 0;
+  }
+
+  .footer-address-wrapper {
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .footer-bottom-item:nth-child(even):not(:last-child):after {
+    content: "|";
+    color: var(--text-gray-300, #d9dbe1);
+    text-align: center;
+    font-feature-settings: "liga" off;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    position: absolute;
+    right: -8px;
+    top: center;
+  }
+}
+
+/* =========================== */
