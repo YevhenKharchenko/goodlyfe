@@ -572,7 +572,11 @@ img {
   padding-bottom: 0;
 }
 
-.app > .container {
+.app > .app-background-container {
+  padding-right: 0;
+}
+
+.app-background-container > .container {
   padding-right: 0;
 }
 
@@ -601,6 +605,8 @@ img {
   display: flex;
   gap: 12px;
   margin-bottom: 39px;
+  justify-content: space-between;
+  padding-right: 16px;
 }
 
 .app-item {
@@ -699,7 +705,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 24px;
-  width: 255px;
+  width: 265px;
 }
 
 .footer-soc-list {
@@ -909,13 +915,16 @@ img {
   .hero {
     padding-top: 241px;
     padding-bottom: 43px;
-    background-image: url(../images/Path-2-min.png),
+    background-image: url(../images/Path-2.svg),
       linear-gradient(rgba(45, 40, 36, 0.2), rgba(45, 40, 36, 0.2)),
       url(../images/Female-working-out-min.jpg);
-    background-position: bottom 0 center, center, top 0px center;
+    background-position: bottom -1px center, center, top 0px center;
     width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 
   .hero-main-title {
@@ -1105,6 +1114,23 @@ img {
     padding-top: 126px;
     padding-bottom: 0;
     background-image: none;
+    position: relative;
+  }
+
+  .stories-background-container::before {
+    content: "“";
+    color: #000;
+    font-family: Times New Roman;
+    font-size: 358px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 166px;
+    height: 243px;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: -21px;
+    left: 99px;
   }
 
   .stories-background-container > .container {
@@ -1235,7 +1261,10 @@ img {
   }
 
   .app-list {
-    margin-bottom: 39px;
+    margin-bottom: 0;
+    gap: 12px;
+    justify-content: flex-start;
+    padding-right: 0;
   }
 
   .app-img-wrapper {
