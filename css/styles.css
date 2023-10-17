@@ -1142,6 +1142,7 @@ img {
     font-size: 48px;
     width: 414px;
     margin-bottom: 12px;
+    position: relative;
   }
 
   .stories-text {
